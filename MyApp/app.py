@@ -26,7 +26,7 @@ users_mas = [('FEwsf', 'wfwefw', 323525),
              ('123', 'dghhf', 1323),
              ('dhgfh', 'dfhghd', 1323)]
 
-cursor.executemany('''INSERT INTO users (username, login, password) VALUES (?, ?, ?, ?)''', users_mas)
+cursor.executemany('''INSERT INTO users (username, login, password) VALUES (?, ?, ?)''', users_mas)
 
 @app.route('/', methods = ['GET', 'POST'])
 def form_example():
